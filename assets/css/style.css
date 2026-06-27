@@ -3099,3 +3099,26 @@ ul {
     transition: transform 0.25s ease, opacity 0.25s ease;
   }
 }
+
+/* =========================
+   LOCK BODY SCROLL WHEN MOBILE MENU OPEN
+   ========================= */
+
+@media (max-width: 767px) {
+  body.menu-open {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  #menu-toggle:checked + .hamburger-btn {
+    position: fixed;
+    top: 42px;
+    right: 24px;
+    z-index: 3001;
+  }
+
+  #menu-toggle:checked ~ .nav-menu {
+    position: fixed;
+    overflow-y: auto;
+  }
+}

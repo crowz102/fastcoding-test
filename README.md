@@ -2,10 +2,6 @@
 
 A modern, responsive, high-fidelity real estate landing page built for the brand **Reanty**.
 
-## Demo URL
-
-[Live Demo Placeholder](https://example.com/reanty-demo) (Staging / Production link)
-
 ## Features & Sections
 
 The landing page contains the following sections:
@@ -39,24 +35,3 @@ The landing page contains the following sections:
 - **Pure CSS3**: CSS Custom Properties/variables, CSS Grid, Flexbox, media queries, keyframe animations.
 - **SVG Vectors**: Customized vector nodes.
 
-## Structure
-
-```txt
-fastcoding-test/
-├── index.html
-├── README.md
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   └── images/
-└── docs/
-    └── brief.md
-```
-
-## Note on Relative Paths
-
-This project uses strictly relative path links:
-- CSS Reference: `./assets/css/style.css`
-- Image folder placeholder: `./assets/images/...` (when applicable)
-- Static links utilize relative hashes (e.g. `#services`, `#contact`).
-This allows the project to be run directly off local file systems or static web storage nodes (e.g. AWS S3, GitHub Pages, Netlify) without modifications.

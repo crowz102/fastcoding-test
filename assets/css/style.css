@@ -3045,3 +3045,57 @@ ul {
     white-space: normal;
   }
 }
+
+/* =========================
+   FINAL MOBILE MENU CLOSE FIX
+   ========================= */
+
+@media (max-width: 767px) {
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  .nav-menu.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 72%;
+    max-width: 280px;
+    height: 100vh;
+    z-index: 1000;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 110px;
+    gap: 32px;
+    box-shadow: -20px 0 60px rgba(0, 0, 0, 0.08);
+  }
+
+  .hamburger-btn.active {
+    position: fixed;
+    top: 42px;
+    right: calc((100vw - 72%) + 24px);
+    z-index: 1002;
+  }
+
+  .hamburger-btn.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-btn.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .hamburger-btn span {
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+}
